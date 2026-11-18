@@ -148,7 +148,22 @@ like verified signups. An exact tie goes to the earlier entry.
 <details>
 <summary><strong>Why do I upload transcripts?</strong></summary>
 
-They prove your own agent built the entry. The kit strips keys, e-mail addresses and home folder paths before upload.
+They prove your own agent built the entry. The kit strips keys, e-mail addresses and home folder paths before upload,
+and `bundle --redact "<text>"` removes any other personal detail you name.
+</details>
+
+<details>
+<summary><strong>Which agents work?</strong></summary>
+
+Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, opencode, Cline, Aider and dozens more: the kit finds their
+sessions on its own. Run `node cli/makefun.mjs bundle --dry-run` early to see which sessions it picked up.
+</details>
+
+<details>
+<summary><strong>Do I need to code?</strong></summary>
+
+It helps, but your agent does the typing. Your job is to pick the bounty, read what the checks say and decide when
+to submit.
 </details>
 
 ## Earn from referrals too
